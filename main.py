@@ -1,7 +1,6 @@
 import requests
 
-print('Enter website: ')
-site = input().replace('https://', '').replace('http://', '')
+site = input('Enter website: ').replace('https://', '').replace('http://', '').strip()
 print('You enter this site: ' + site)
 req = requests.get('https://' + site)
 
